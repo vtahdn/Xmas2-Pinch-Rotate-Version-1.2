@@ -12,6 +12,13 @@
 		DEA3D4751EED9EA700F2805A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4731EED9EA700F2805A /* Main.storyboard */; };
 		DEA3D4771EED9EA700F2805A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4761EED9EA700F2805A /* Assets.xcassets */; };
 		DEA3D47A1EED9EA700F2805A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4781EED9EA700F2805A /* LaunchScreen.storyboard */; };
+		DEA3D4881EED9EBF00F2805A /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4821EED9EBF00F2805A /* ball.png */; };
+		DEA3D4891EED9EBF00F2805A /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4831EED9EBF00F2805A /* bg.jpg */; };
+		DEA3D48A1EED9EBF00F2805A /* Bones-Transparent-Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4841EED9EBF00F2805A /* Bones-Transparent-Background.png */; };
+		DEA3D48B1EED9EBF00F2805A /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4851EED9EBF00F2805A /* dog.png */; };
+		DEA3D48C1EED9EBF00F2805A /* hat2.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4861EED9EBF00F2805A /* hat2.png */; };
+		DEA3D48D1EED9EBF00F2805A /* hat3.png in Resources */ = {isa = PBXBuildFile; fileRef = DEA3D4871EED9EBF00F2805A /* hat3.png */; };
+		DEA3D48F1EED9FA500F2805A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA3D48E1EED9FA500F2805A /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		DEA3D4761EED9EA700F2805A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEA3D4791EED9EA700F2805A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEA3D47B1EED9EA700F2805A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA3D4821EED9EBF00F2805A /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		DEA3D4831EED9EBF00F2805A /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		DEA3D4841EED9EBF00F2805A /* Bones-Transparent-Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bones-Transparent-Background.png"; sourceTree = "<group>"; };
+		DEA3D4851EED9EBF00F2805A /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		DEA3D4861EED9EBF00F2805A /* hat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat2.png; sourceTree = "<group>"; };
+		DEA3D4871EED9EBF00F2805A /* hat3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat3.png; sourceTree = "<group>"; };
+		DEA3D48E1EED9FA500F2805A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +70,27 @@
 			children = (
 				DEA3D46F1EED9EA700F2805A /* AppDelegate.swift */,
 				DEA3D4711EED9EA700F2805A /* ViewController.swift */,
+				DEA3D48E1EED9FA500F2805A /* Item.swift */,
 				DEA3D4731EED9EA700F2805A /* Main.storyboard */,
 				DEA3D4761EED9EA700F2805A /* Assets.xcassets */,
 				DEA3D4781EED9EA700F2805A /* LaunchScreen.storyboard */,
 				DEA3D47B1EED9EA700F2805A /* Info.plist */,
+				DEA3D4811EED9EAC00F2805A /* Resource */,
 			);
 			path = "Xmas2 Pinch Rotate Version 1.2";
+			sourceTree = "<group>";
+		};
+		DEA3D4811EED9EAC00F2805A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DEA3D4821EED9EBF00F2805A /* ball.png */,
+				DEA3D4831EED9EBF00F2805A /* bg.jpg */,
+				DEA3D4841EED9EBF00F2805A /* Bones-Transparent-Background.png */,
+				DEA3D4851EED9EBF00F2805A /* dog.png */,
+				DEA3D4861EED9EBF00F2805A /* hat2.png */,
+				DEA3D4871EED9EBF00F2805A /* hat3.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +152,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA3D48B1EED9EBF00F2805A /* dog.png in Resources */,
+				DEA3D48A1EED9EBF00F2805A /* Bones-Transparent-Background.png in Resources */,
+				DEA3D48D1EED9EBF00F2805A /* hat3.png in Resources */,
+				DEA3D48C1EED9EBF00F2805A /* hat2.png in Resources */,
+				DEA3D4891EED9EBF00F2805A /* bg.jpg in Resources */,
 				DEA3D47A1EED9EA700F2805A /* LaunchScreen.storyboard in Resources */,
 				DEA3D4771EED9EA700F2805A /* Assets.xcassets in Resources */,
+				DEA3D4881EED9EBF00F2805A /* ball.png in Resources */,
 				DEA3D4751EED9EA700F2805A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA3D4721EED9EA700F2805A /* ViewController.swift in Sources */,
+				DEA3D48F1EED9FA500F2805A /* Item.swift in Sources */,
 				DEA3D4701EED9EA700F2805A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

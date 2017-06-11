@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xmas2_Pinch_Rotate_Version_1_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Fmc-wK-noK">
+                                <rect key="frame" x="-50" y="-80" width="471" height="818"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dog.png" translatesAutoresizingMaskIntoConstraints="NO" id="KwJ-Aq-gzb">
+                                <rect key="frame" x="85" y="398" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7eJ-6c-2M7"/>
+                                    <constraint firstAttribute="height" constant="200" id="VOP-6i-jE0"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bones-Transparent-Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="JSo-gN-MRD" customClass="Item" customModule="Xmas2_Pinch_Rotate_Version_1_2" customModuleProvider="target">
+                                <rect key="frame" x="50" y="61" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="SfP-qM-nNA" customClass="Item" customModule="Xmas2_Pinch_Rotate_Version_1_2" customModuleProvider="target">
+                                <rect key="frame" x="246" y="61" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hat2.png" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-so-XOn" customClass="Item" customModule="Xmas2_Pinch_Rotate_Version_1_2" customModuleProvider="target">
+                                <rect key="frame" x="50" y="192" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hat3.png" translatesAutoresizingMaskIntoConstraints="NO" id="LS0-QE-sTo" customClass="Item" customModule="Xmas2_Pinch_Rotate_Version_1_2" customModuleProvider="target">
+                                <rect key="frame" x="246" y="192" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fmc-wK-noK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-80" id="3q2-gY-mTz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fmc-wK-noK" secondAttribute="bottom" constant="-71" id="8fd-PF-lUN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KwJ-Aq-gzb" secondAttribute="bottom" constant="69" id="aev-4G-BrK"/>
+                            <constraint firstItem="KwJ-Aq-gzb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0c-t6-rSF"/>
+                            <constraint firstAttribute="trailing" secondItem="Fmc-wK-noK" secondAttribute="trailing" constant="-46" id="bqv-rc-mfg"/>
+                            <constraint firstItem="Fmc-wK-noK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-50" id="ivr-Vt-9XP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bones-Transparent-Background.png" width="600" height="306"/>
+        <image name="ball.png" width="2229" height="2364"/>
+        <image name="bg.jpg" width="600" height="600"/>
+        <image name="dog.png" width="1816" height="2055"/>
+        <image name="hat2.png" width="600" height="304"/>
+        <image name="hat3.png" width="1903" height="2400"/>
+    </resources>
 </document>
